@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="icon" type="image/x-icon" href="./assets/logo.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #ffe6ea;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         .header {
             background-color: #ff4d6d;
@@ -19,6 +18,7 @@
             padding: 20px;
             font-size: 24px;
             font-weight: bold;
+            text-align: center;
         }
         .menu-container {
             padding: 20px;
@@ -43,7 +43,8 @@
             width: 200px;
         }
         .item img {
-            width: 100%;
+            width: 150px;
+            height: 150px;
             border-radius: 10px;
         }
         .item p {
@@ -67,48 +68,204 @@
     </style>
 </head>
 <body>
-    <div class="header">Menu</div>
+    <div class="header">MENU</div>
     <div class="menu-container">
-        <div class="category">Menu</div>
+        <div class="category">COFFEE</div>
         <div class="items">
             <div class="item">
-                <img src="placeholder1.jpg" alt="Набор пончиков">
-                <p>Набор пончиков "Ассорти №1"</p>
-                <p class="price">900 р.</p>
+                <img src="../assets/menu/main/americano.webp" alt="Americano">
+                <p>Americano</p>
+                <p class="price">HOT: 90PHP</p>
+                <p class="price">ICED: 100PHP</p>
                 <button class="add-button">+</button>
             </div>
             <div class="item">
-                <img src="placeholder2.jpg" alt="Набор пончиков">
-                <p>Набор пончиков "Ассорти №1"</p>
-                <p class="price">900 р.</p>
+                <img src="../assets/menu/main/cappuccino.webp" alt="Cappuccino">
+                <p>Cappuccino</p>
+                <p class="price">HOT: 140PHP</p>
+                <p class="price">ICED: 150PHP</p>
                 <button class="add-button">+</button>
             </div>
             <div class="item">
-                <img src="placeholder3.jpg" alt="Набор пончиков">
-                <p>Набор пончиков "Ассорти №1"</p>
-                <p class="price">900 р.</p>
+                <img src="../assets/menu/main/latte.webp" alt="Latte">
+                <p>Latte</p>
+                <p class="price">HOT: 140PHP</p>
+                <p class="price">ICED: 150PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/main/vanilla latte.jpg" alt="Vanilla Latte">
+                <p>Vanilla Latte</p>
+                <p class="price">HOT: 150PHP</p>
+                <p class="price">ICED: 160PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/main/caramel macchiato.jpg" alt="Caramel Macchiato">
+                <p>Caramel Macchiato</p>
+                <p class="price">HOT: 150PHP</p>
+                <p class="price">ICED: 160PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/main/mocha.jpg" alt="Mocha">
+                <p>Mocha</p>
+                <p class="price">HOT: 150PHP</p>
+                <p class="price">ICED: 160PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/main/peppermint mocha.webp" alt="Peppermint Mocha">
+                <p>Peppermint Mocha</p>
+                <p class="price">HOT: 160PHP</p>
+                <p class="price">ICED: 170PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/main/biscoff latte.jpg" alt="Biscoff Latte">
+                <p>Biscoff Latte</p>
+                <p class="price">HOT: -</p>
+                <p class="price">ICED: 100PHP</p>
+                <button class="add-button">+</button>
+            </div>
+        </div>
+
+        <div class="category">NON-COFFEE</div>
+        <div class="items">
+            <div class="item">
+                <img src="../assets/menu/main/signature chocolate.jpg" alt="Signature Chocolate">
+                <p>Signature Chocolate</p>
+                <p class="price">HOT: 140PHP</p>
+                <p class="price">ICED: 150PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/main/chocolate mint.jpg" alt="Chocolate Mint">
+                <p>Chocolate Mint</p>
+                <p class="price">HOT: 150PHP</p>
+                <p class="price">ICED: 160PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/main/matcha latte.jpg" alt="Matcha Latte">
+                <p>Matcha Latte</p>
+                <p class="price">HOT: 150PHP</p>
+                <p class="price">ICED: 160PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/main/strawberry latte.jpg" alt="Strawberry Latte">
+                <p>Strawberry Latte</p>
+                <p class="price">HOT: -</p>
+                <p class="price">ICED: 160PHP</p>
+                <button class="add-button">+</button>
+            </div>
+        </div>  
+
+        <div class="category">FRAPPE COFFEE</div>
+        <div class="items">
+            <div class="item">
+                <img src="../assets/menu/frappe/americano.webp" alt="Americano">
+                <p>Americano</p>
+                <p class="price">145PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/caramel.webp" alt="Caramel">
+                <p>Caramel</p>
+                <p class="price">180PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/mocha.webp" alt="Mocha">
+                <p>Mocha</p>
+                <p class="price">180PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/peppermint mocha.jpg" alt="Peppermint Mocha">
+                <p>Peppermint Mocha</p>
+                <p class="price">190PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/vanilla coffee jelly.jpg" alt="Vanilla Coffee Jelly">
+                <p>Vanilla Coffee Jelly</p>
+                <p class="price">190PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/biscoff.jpg" alt="Biscoff">
+                <p>Biscoff</p>
+                <p class="price">190PHP</p>
                 <button class="add-button">+</button>
             </div>
         </div>
         
-        <div class="category">Наборы из 6 пончиков</div>
+        <div class="category">FRAPPE NON-COFFEE</div>
         <div class="items">
             <div class="item">
-                <img src="placeholder4.jpg" alt="Набор пончиков">
-                <p>Набор пончиков "Ассорти №1"</p>
-                <p class="price">900 р.</p>
+                <img src="../assets/menu/frappe/ube cream.jpg" alt="Ube Cream">
+                <p>Ube Cream</p>
+                <p class="price">170PHP</p>
                 <button class="add-button">+</button>
             </div>
             <div class="item">
-                <img src="placeholder5.jpg" alt="Набор пончиков">
-                <p>Набор пончиков "Ассорти №1"</p>
-                <p class="price">900 р.</p>
+                <img src="../assets/menu/frappe/chocolate.jpg" alt="Chocolate">
+                <p>Chocolate</p>
+                <p class="price">190PHP</p>
                 <button class="add-button">+</button>
             </div>
             <div class="item">
-                <img src="placeholder6.jpg" alt="Набор пончиков">
-                <p>Набор пончиков "Ассорти №1"</p>
-                <p class="price">900 р.</p>
+                <img src="../assets/menu/frappe/matcha.jpg" alt="Matcha">
+                <p>Matcha</p>
+                <p class="price">190PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/strawberries and cream.webp" alt="Strawberries & Cream">
+                <p>Strawberries & Cream</p>
+                <p class="price">190PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/blueberries and cream.jpg" alt="Blueberries & Cream">
+                <p>Blueberries & Cream</p>
+                <p class="price">190PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/mangoes and cream.webp" alt="Mangoes & Cream">
+                <p>Mangoes & Cream</p>
+                <p class="price">190PHP</p>
+                <button class="add-button">+</button>
+            </div>
+        </div>
+
+        <div class="category">FRAPPE SPECIALS</div>
+        <div class="items">
+            <div class="item">
+                <img src="../assets/menu/frappe/cotton candy affogato.jpg" alt="Cotton Candy Affogato">
+                <p>Cotton Candy Affogato</p>
+                <p class="price">170PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/cotton candy matchagato.webp" alt="Cotton Candy Matchagato">
+                <p>Cotton Candy Matchagato</p>
+                <p class="price">170PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/cotton candy ubegato.jpg" alt="Cotton Candy Ubegato">
+                <p>Cotton Candy Ubegato</p>
+                <p class="price">170PHP</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="item">
+                <img src="../assets/menu/frappe/cotton candy chocogato.jpg" alt="Cotton Candy Chocogato">
+                <p>Cotton Candy Chocogato</p>
+                <p class="price">170PHP</p>
                 <button class="add-button">+</button>
             </div>
         </div>
