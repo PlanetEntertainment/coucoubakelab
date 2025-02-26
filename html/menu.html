@@ -24,7 +24,33 @@
             font-size: 24px;
             font-weight: 400;
             font-style: normal;
-            text-align: center;
+            text-align: left;
+        }
+        .navbar {
+            background-color: #ff4f68;
+            display: flex;
+            padding-left: 50px;
+            padding-right: 50px;
+            align-items: center;
+        }
+        .navbar .logo {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-right: 20px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+        }
+        .navbar a:hover {
+            color: rgb(189, 189, 189);
         }
         .menu-container {
             padding: 20px;
@@ -79,7 +105,10 @@
     </style>
 </head>
 <body>
-    <div class="header">COUCOU<br/>BAKELAB</div>
+    <div class="navbar">
+        <div class="header">Coucou<br/>Bakelab</div>
+        <a href="landing.html">Home</a>
+    </div>
     <div class="menu-container">
         <div class="category">COFFEE</div>
         <div class="items">
