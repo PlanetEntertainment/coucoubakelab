@@ -18,15 +18,35 @@
             margin: 0;
             padding: 0;
         }
-        .header {
+        .navbar {
             background-color: #ff4d6d;
             color: white;
-            padding: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo {
             font-family: "Lilita One", serif;
             font-size: 24px;
             font-weight: 400;
             font-style: normal;
-            text-align: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 50px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+        }
+        .nav-links a:hover {
+            color: pink;
         }
         .menu-container {
             padding: 20px;
@@ -81,20 +101,14 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <a class="logo" href="#">
-            <img src="../assets/logo.png" alt="COUCOU Bakelab">
-        </a>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-        <div class="menu" id="menu">
-            <a href="./landing.html">Home</a>
-            <a href="#">Menu</a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contacts</a>
+    <div class="navbar">
+        <div class="logo">Coucou<br/>Bakelab</div>
+        <div class="nav-links">
+            <a href="landing.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
         </div>
-    </nav>
-
-    <div class="header">COUCOU<br/>BAKELAB</div>
+    </div>
     <div class="menu-container">
         <div class="category">COFFEE</div>
         <div class="items">
