@@ -16,41 +16,35 @@
             margin: 0;
             padding: 0;
         }
-        .header {
+        .navbar {
             background-color: #ff4d6d;
             color: white;
-            padding: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo {
             font-family: "Lilita One", serif;
             font-size: 24px;
             font-weight: 400;
             font-style: normal;
-            text-align: left;
         }
-        .navbar {
-            background-color: #ff4f68;
+        .nav-links {
             display: flex;
-            padding-left: 50px;
-            padding-right: 50px;
-            align-items: center;
+            gap: 50px;
         }
-        .navbar .logo {
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            text-transform: uppercase;
-            line-height: 1.2;
-            margin-right: 20px;
-        }
-        .navbar a {
+        .nav-links a {
             text-decoration: none;
             color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
             font-weight: bold;
             transition: background 0.3s ease-in-out;
         }
-        .navbar a:hover {
-            color: rgb(189, 189, 189);
+        .nav-links a:hover {
+            color: pink;
         }
         .menu-container {
             padding: 20px;
@@ -106,10 +100,12 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="header">Coucou<br/>Bakelab</div>
-        <a href="landing.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
+        <div class="logo">Coucou<br/>Bakelab</div>
+        <div class="nav-links">
+            <a href="landing.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
     </div>
     <div class="menu-container">
         <div class="category">COFFEE</div>
