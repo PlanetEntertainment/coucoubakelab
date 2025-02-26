@@ -24,15 +24,15 @@ body, html {
 }
 
 .left {
-background-color: pink;
-clip-path: polygon(0 0, 70% 0, 50% 100%, 0% 100%);
-opacity: 0.100;
-position: absolute;
-width: 100%; /* Adjust as needed */
-height: 100%; /* Adjust as needed */
+    background-color: pink;
+    clip-path: polygon(0 0, 70% 0, 50% 100%, 0% 100%);
+    opacity: 0.100;
+    position: absolute;
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
 
-/* Animation */
-animation: slideIn 2.0s ease-out forwards;
+    /* Animation */
+    animation: slideIn 2.0s ease-out forwards;
 }
 
 @keyframes slideIn {
