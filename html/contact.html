@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="icon" type="image/x-icon" href="../assets/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +35,105 @@
             </div>
         </div>
     </nav>
+=======
+    <title>Contact Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-image: url('../assets/coucou.jpg'); /* Using a JPG image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20px;
+    color: #444;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+            height: auto;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 30px;
+            background: #f8d7de; /* Light pink */
+            border-radius: 50px 10px 50px 10px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.03);
+        }
+        .map {
+            width: 60%;
+        }
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #333;
+        }
+        .contact a {
+            color: #d63384;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .zoomed {
+            transform: scale(2) !important;
+            z-index: 10;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #050505;
+        }
+    </style>
+</head>
+<body>
+    <img src="../assets/logo.png" alt="Logo" class="logo">
+>>>>>>> 982d110082e8709cd9507407c3eb40d7faa6d9bc
     <div class="container contact">
         <h2>Contact Information</h2>
         <p>Address: 2/F Orchard: Community Place, Bldg. 2, Essel Park, Telebastagan, San Fernando, Philippines, 2000, 2nd floor</p>
@@ -53,7 +153,11 @@
         <img src="../assets/d5.jpg">
         <img src="../assets/d6.jpg">
     </div>
+<<<<<<< HEAD
     <div class="footer">© 2025 Coucou Bake Lab. All rights reserved.</div>
+=======
+    <div class="footer">© 2025 CoucouBakeLab. All rights reserved.</div>
+>>>>>>> 982d110082e8709cd9507407c3eb40d7faa6d9bc
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const images = document.querySelectorAll(".gallery img");
