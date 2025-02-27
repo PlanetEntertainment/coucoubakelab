@@ -1,23 +1,24 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffe6ea;
+body, html {
     margin: 0;
     padding: 0;
+    height: 100vh;
+    background: url('../assets/coucou.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-/* Navigation Bar */
 .navbar {
-    background-color: #ff4d6d;
-    color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #FF4D6D;
+    color: white;
 }
-.navbar .logo {
+
+.navbar .logo, .menu {
     font-family: "Lilita One", serif;
     font-size: 24px;
     font-weight: 400;
@@ -26,48 +27,46 @@ body {
 
 .menu {
     display: flex;
-    gap: 53.5px;
-    top: 60px;
-    right: 0px;
-    background: rgba(255, 77, 109, 0.8);
-    position: absolute;
-}
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: background 0.3s ease-in-out;
-}
-.menu a:hover {
-    color: pink;
+    gap: 35px;
 }
 
 .menu a {
-    color: white;
     text-decoration: none;
-    padding: 8px 12px;
-    display: block;
+    color: white;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #C3002F;
 }
 
 .hamburger {
-    font-size: 1.5rem;
+    display: none;
+    font-size: 30px;
     cursor: pointer;
-    user-select: none;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 768px) {
     .menu {
-        display: flex;
-        position: static;
-        background: none;
-        flex-direction: row;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        background-color: #FF4D6Dcc;
+        width: 100%;
+        padding: 10px 0;
     }
 
     .menu a {
-        margin-left: 15px;
+        margin-left: 30px;
+    }
+
+    .menu.show {
+        display: flex;
     }
 
     .hamburger {
-        display: none;
+        display: block;
     }
 }
