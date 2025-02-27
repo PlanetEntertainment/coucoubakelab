@@ -20,37 +20,41 @@ body, html {
     align-items: center;
 }
 
-/* Navbar */
 .navbar {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    height: 40px;
-}
-
-.menu {
-    display: flex;
-}
-
-.menu a {
+    background-color: #ff4d6d;
     color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo {
+    font-family: "Lilita One", serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar-nav .nav-link {
     text-decoration: none;
-    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
-
-.menu a:hover {
-    background: rgba(255, 255, 255, 0.2);
+.navbar-nav .nav-link:hover {
+    color: #ffc0cb;
 }
-
-.hamburger {
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
+.navbar-toggler {
+    border: none;
+    filter: invert(1);
+}
+.navbar-nav {
+    gap: 25px;
+}
+.menu-container {
+    padding: 20px;
 }
 
 /* About Section */
@@ -105,29 +109,6 @@ body, html {
 
     .about-left, .about-right {
         text-align: center;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 50px;
-        right: 20px;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    .menu a {
-        padding: 12px;
-    }
-
-    .menu.active {
-        display: flex;
     }
 }
 

@@ -3,161 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: url('../assets/coucou.jpg') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-            flex-direction: column;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        
-        .content-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            width: 100%;
-            max-width: 1200px;
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        }
-        
-        .container, .gallery {
-            background: #f9e6f0;/* Slight transparent background */
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-            width: 100%;
-            max-width: 1200px;
-            text-align: center;
-            opacity: 0;
-            animation: slideIn 1s ease-in-out forwards;
-        }
-        
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 40px;
-        }
-        
-        .inner-container {
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 15px;
-            width: 45%;
-        }
-        
-        .map {
-            margin-top: 20px;
-            width: 45%;
-        }
-        
-        .animated-image {
-            width: 100px;
-            height: 100px;
-            margin-top: 10px;
-            animation: bounce 2s infinite;
-        }    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        h1 {
-            font-family: 'Pacifico', cursive;
-            font-size: 24px;
-            color: #d63384;
-        }
-
-        .info {
-            font-size: 16px;
-            color: #555;
-            margin: 10px 0;
-        }
-
-        .email {
-            color: #ff4d94;
-            font-weight: bold;
-        }
-
-        .motto {
-            font-size: 20px;
-            font-style: italic;
-            color: #d63384;
-            margin-top: 20px;
-            text-align: center;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes slideIn {
-            from { transform: translateY(-20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            max-width: 450px;
-        }
-
-        .gallery img {
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.2);
-        }
-    </style>
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact Page</title>
 </head>
 <body>
-    <div class="content-wrapper">
+    <img src="../assets/logo.png" alt="Logo" class="logo">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <!-- Info Section -->
-            <div class="inner-container">
-                <h1>Contact Us</h1>
-                <img src="../assets/logo.png" alt="Animated Image" class="animated-image">
-                <p class="info">📧 Email: <span class="email">email.coucou.bakelab@gmail.com</span></p>
-                <p class="info">📍 Address: 2/F Orchard: Community Place, Bldg. 2, Essel Park, Telebastagan, San Fernando, Philippines, 2000</p>
-                <p class="info">📞 Phone: +63 912 345 6789</p>
-            </div>
-            
-            <!-- Map Section -->
-            <div class="map">
-                <h2>Our Location</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.776637462307!2d120.6041848!3d15.1169443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f321f800b99f%3A0x5c7d869651bf6915!2sOrchard%3A%20A%20Community%20Place!5e0!3m2!1sen!2sph!4v1613964225195!5m2!1sen!2sph" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <a href="../html/landingpage.html" style="text-decoration: none; color: white;"><div class="logo"><img src="../assets/logo.png" style="width: 65px;">Coucou Bakelab</div></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
             </div>
         </div>
-        
-        <div class="gallery">
-            <img src="../assets/d1.jpg">
-            <img src="../assets/d2.jpg">
-            <img src="../assets/d3.jpg">
-            <img src="../assets/d4.jpg">
-            <img src="../assets/d5.jpg">
-            <img src="../assets/d6.jpg">
-        </div>
+    </nav>
+    <div class="container contact">
+        <h2>Contact Information</h2>
+        <p>Address: 2/F Orchard: Community Place, Bldg. 2, Essel Park, Telebastagan, San Fernando, Philippines, 2000, 2nd floor</p>
+        <p>Email: coucou.bakelab@gmail.com</p>
+        <p>Instagram: <a href="https://www.instagram.com/coucou.bakelab/?hl=en" target="_blank">@coucou.bakelab</a></p>
     </div>
-    
-    <p class="motto">"Sweet moments, delightful memories."</p>
+    <div class="container map">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.188675842132!2d120.62011711532677!3d15.109603889373822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f0f5f5a93a45%3A0x5a5a5a5a5a5a5a5a!2sOrchard%20Community%20Place%2C%20Bldg.%202%2C%20Essel%20Park%2C%20Telebastagan%2C%20San%20Fernando%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1708950000000!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="container gallery">
+        <h2>Gallery</h2>
+        <img src="../assets/d1.jpg">
+        <img src="../assets/d2.jpg">
+        <img src="../assets/d3.jpg">
+        <img src="../assets/d4.jpg">
+        <img src="../assets/d5.jpg">
+        <img src="../assets/d6.jpg">
+    </div>
+    <div class="footer">© 2025 Coucou Bake Lab. All rights reserved.</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".gallery img");
+            images.forEach(img => {
+                img.addEventListener("click", function () {
+                    img.classList.toggle("zoomed");
+                });
+            });
+        });
+    </script>
 </body>
 </html>

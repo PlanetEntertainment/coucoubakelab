@@ -17,21 +17,23 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="../html/landingpage.html" style="text-decoration: none; color: white;"><div class="logo"><img src="../assets/logo.png" style="width: 65px;">COUCOU Bakelab</div></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="container-fluid">
-        <nav class="navbar">
-            <a class="logo" href="#">
-                <img src="../assets/logo.png" alt="COUCOU Bakelab">
-            </a>
-            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-            <div class="menu" id="menu">
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">About</a>
-                <a href="#">Contacts</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
     <!-- About Section -->
     <section id="about">
@@ -69,12 +71,5 @@
             <p>&copy; 2025 COUCOU Bakelab. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            menu.classList.toggle("active");
-        }
-    </script>
 </body>
 </html>
