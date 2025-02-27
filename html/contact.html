@@ -10,7 +10,7 @@
         body {
             margin: 0;
             font-family: 'Playfair Display', serif;
-            background: #ffd6e0;
+            background: #ffeef2; /* Super light pink */
             text-align: center;
             padding: 20px;
             color: #444;
@@ -35,7 +35,7 @@
             width: 80%;
             margin: 50px auto;
             padding: 30px;
-            background: #ffb6c1;
+            background: #ffccd5; /* Light pink */
             border-radius: 50px 10px 50px 10px;
             backdrop-filter: blur(10px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -88,6 +88,11 @@
             transform: scale(2) !important;
             z-index: 10;
         }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -111,6 +116,7 @@
         <img src="../assets/d5.jpg">
         <img src="../assets/d6.jpg">
     </div>
+    <div class="footer">© 2025 CoucouBakeLab. All rights reserved.</div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const images = document.querySelectorAll(".gallery img");
