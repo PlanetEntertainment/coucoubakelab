@@ -8,8 +8,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    background: rgba(255, 192, 203, 0.253);
+    color: rgb(0, 0, 0);
     z-index: 1000;
 }
 
@@ -24,20 +24,20 @@
     position: absolute;
     top: 50px;
     right: 20px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 192, 203, 0.13);
     padding: 10px;
     border-radius: 5px;
 }
 
 .menu a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 8px 12px;
     display: block;
 }
 
 .menu a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(224, 182, 205, 0.37);
 }
 
 .hamburger {
@@ -60,5 +60,15 @@
 
     .hamburger {
         display: none;
+    }
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 0.50;
     }
 }
