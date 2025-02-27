@@ -1,64 +1,89 @@
-/* Navbar Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6ea;
+    margin: 0;
+    padding: 0;
+}
 .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: #ff4d6d;
     color: white;
-    z-index: 1000;
+    padding-top: 15px;  
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.logo img {
-    height: 40px;
-    width: auto;
+.navbar .logo {
+    font-family: "Lilita One", serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
 }
-
-.menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    background: rgba(0, 0, 0, 0.8);
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover {
+    color: #ffc0cb;
+}
+.navbar-toggler {
+    border: none;
+    filter: invert(1);
+}
+.navbar-nav {
+    gap: 50px;
+}
+.menu-container {
+    padding: 20px;
+}
+.category {
+    font-family: "Lilita One", serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #c3002f;
+    margin: 20px 0;
+    text-align: center;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+.item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item p {
+    margin: 10px 0;
+    font-family: "Madimi One", serif;
+    font-size: 18px;
+}
+.price {
+    font-size: 16px;
+    color: #ff4d6d;
+}
+.add-button {
+    background: #ff4d6d;
+    color: white;
+    border: none;
     padding: 10px;
     border-radius: 5px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    display: block;
-}
-
-.menu a:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.hamburger {
-    font-size: 1.5rem;
     cursor: pointer;
-    user-select: none;
-}
-
-@media (min-width: 600px) {
-    .menu {
-        display: flex;
-        position: static;
-        background: none;
-        flex-direction: row;
-    }
-
-    .menu a {
-        margin-left: 15px;
-    }
-
-    .hamburger {
-        display: none;
-    }
+    float: right;
 }
