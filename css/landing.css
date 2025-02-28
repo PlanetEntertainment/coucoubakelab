@@ -31,11 +31,11 @@ body::before {
     text-shadow: 5px 5px 20px black;
     text-align: right;
     font-size: 75px;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 strong {
-    color: #C75B7A;
+    color: #ff4d6d;
 }
 
 .navbar {
@@ -71,28 +71,14 @@ strong {
 .navbar-nav {
     gap: 25px;
 }
-.menu-container {
-    padding: 20px;
-}
-
 
 /* Footer Styles */
 footer {
-    color: #000000;
+    color: white;
     text-align: center;
     padding: 15px;
     width: 100%;
     
-}
-
-footer a {
-    color: #000000;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
 
 .footer-content {
