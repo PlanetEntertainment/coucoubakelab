@@ -78,6 +78,26 @@ strong {
     gap: 25px;
 }
 
+.center-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #ff4d6d;
+    color: rgb(248, 245, 245);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 200px;
+}
+.center-button:hover {
+    background-color: #ff758f;
+}
+
 /* Footer Styles */
 footer {
     color: white;
