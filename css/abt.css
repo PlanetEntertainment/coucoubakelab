@@ -8,18 +8,7 @@ body, html {
     background-size: cover;
 }
 
-/* Main container to center content */
-.container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* Navigation Bar */
 .navbar {
     background-color: #ff4d6d;
     color: white;
@@ -53,11 +42,17 @@ body, html {
 .navbar-nav {
     gap: 25px;
 }
-.menu-container {
-    padding: 20px;
+
+/* Footer Styles */
+footer {
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    
 }
 
-/* About Section */
+/* Main container to center content */
 #about {
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +74,7 @@ body, html {
 }
 
 .about-left {
-    text-align: left;
+    text-align: justify;
 }
 
 .about-left h2 {
@@ -100,8 +95,6 @@ body, html {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Responsive Design */
 @media (max-width: 768px) {
     #about {
         flex-direction: column;
@@ -131,11 +124,10 @@ body, html {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     align-items: center;
 }
-
-
 
 .slide-track img {
     width: 150px;
@@ -148,16 +140,7 @@ body, html {
     100% { transform: translateX(-50%); }
 }
 
-/* Footer Styles */
-footer {
-   
-    color: #000000;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
-    margin-top: auto; /* Ensures the footer stays at the bottom */
-}
-
+/* Footer */
 footer a {
     color: #000000;
     text-decoration: none;
