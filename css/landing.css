@@ -20,7 +20,7 @@ body::before {
     z-index: 1;
 }
 
-.navbar, .container-fluid, footer {
+.navbar, .container, footer {
     position: relative;
     z-index: 2;
 }
@@ -29,10 +29,16 @@ body::before {
     color: white;
     font-family: "Lilita One", serif;
     text-shadow: 5px 5px 20px black;
-    text-align: right;
+    text-align: center;
     font-size: 75px;
-    padding-top: 100px;
+    padding-top: 135px;
+    animation: fadeIn 5s;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 strong {
     color: #ff4d6d;
