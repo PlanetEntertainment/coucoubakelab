@@ -61,12 +61,72 @@ navbar, .container, footer, #about, .contact,map,.gallery,.navbar{
 
 /* Footer Styles */
 footer {
-    color: #140f0f;
+    color: #ffffff;
     text-align: center;
     padding: 15px;
     width: 100%;
-    margin-top: 50px;
+    
 }
+
+/* Footer */
+footer a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+        /* Carousel Styling */
+        .slider {
+            overflow: hidden;
+            width: 100%;
+            padding: 20px 0;
+            position: relative;
+        }
+        
+        .slide-track {
+            display: flex;
+            width: calc(200px * 14); /* Adjust based on number of images */
+            animation: scroll 20s linear infinite;
+        }
+        
+        .slide-track img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            margin: 0 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .slide-track img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .slide-track img {
+                width: 150px;
+                height: 120px;
+            }
+        }
 
 .contact {
     text-align: center;
